@@ -3,11 +3,7 @@
 # Bookey
 This app is your key to searching through and saving Google books.
 
-<img src="./readme-images/upon-landing.png" alt="Search page upon landing" width="200"/> 
-
-<img src="./readme-images/searched-books.png" alt="Search page after searching" width="200"/> 
-
-<img src="./readme-images/saved-books.png" alt="Saved books page" width="200"/> 
+<img src="./readme-images/upon-landing.png" alt="Search page upon landing" width="300"/>  <img src="./readme-images/searched-books.png" alt="Search page after searching" width="300"/>  <img src="./readme-images/saved-books.png" alt="Saved books page" width="300"/> 
 
 #### [Deployed App](#)
 
