@@ -4,7 +4,7 @@ import { Typography, Button, TextField, Box, List, ListItem, Link } from '@mater
 import { Card, CardActionArea, CardActions, CardContent, CardMedia } from '@material-ui/core';
 import { borders } from '@material-ui/system';
 import GoogleBooksAPI from '../utils/GoogleBooksAPI';
-import db from '../utils/API';
+import API from '../utils/API';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -62,12 +62,24 @@ function Search() {
     searchAPI(formObject.searchBooks);
   };
 
-  const handleSaveBook = (e) => {
+  const handleSaveBook = (e, book) => {
     e.preventDefault();
-    console.log("saving");
+    console.log("e", e);
+    // const book = e.target;
+    console.log("book", book)
+    API.saveBook({
+      googleId: book.id,
+      title: book.volumeInfo.title,
+      subtitle: book.volumeInfo.subtitle,
+      link: book.volumeInfo.infoLink,
+      authors: book.volumeInfo.authors,
+      description: book.volumeInfo.description,
+      image: book.volumeInfo.imageLinks.thumbnail
+    })
+    .then(() => this.getBooks())
+    .catch(err => console.log(err));
+  };
 
-
-  }
   return (
 
     <div className={classes.root}>
@@ -123,7 +135,7 @@ function Search() {
                     </div>
                   </CardActionArea>
                   <CardActions>
-        <Button size="small" color="secondary" variant="contained" onClick={handleSaveBook}>
+        <Button size="small" color="secondary" variant="contained" onClick={(e) => handleSaveBook(e, book)}>
           Save
         </Button>
       </CardActions>
