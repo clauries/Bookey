@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Button, TextField, Box, List, ListItem, Link } from '@material-ui/core';
+import { Typography, Button, Box, List, Link } from '@material-ui/core';
 import { Card, CardActionArea, CardActions, CardContent, CardMedia } from '@material-ui/core';
 import { borders } from '@material-ui/system';
-import GoogleBooksAPI from '../utils/GoogleBooksAPI';
 import API from '../utils/API';
 
 const useStyles = makeStyles(theme => ({
@@ -43,7 +42,6 @@ const useStyles = makeStyles(theme => ({
 
 function Saved() {
   const classes = useStyles();
-  const preventDefault = (event) => event.preventDefault();
   const [savedBooks, setSavedBooks] = useState([]);
 
   useEffect(() => {
@@ -72,7 +70,7 @@ function Saved() {
         borderRadius={16}
         borderColor="grey.500"
         padding="16px"
-        margin="2% 10%">
+        margin="2% 12%">
         <Typography variant="h2" className={classes.title}>
           Saved Books
         </Typography>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Button, TextField, Box, List, ListItem, Link } from '@material-ui/core';
+import { Typography, Button, TextField, Box, List, Link } from '@material-ui/core';
 import { Card, CardActionArea, CardActions, CardContent, CardMedia } from '@material-ui/core';
 import { borders } from '@material-ui/system';
 import GoogleBooksAPI from '../utils/GoogleBooksAPI';
@@ -43,7 +43,6 @@ const useStyles = makeStyles(theme => ({
 
 function Search() {
   const classes = useStyles();
-  const preventDefault = (event) => event.preventDefault();
   const [bookRes, setBookRes] = useState([]);
   const [formObject, setFormObject] = useState({});
 
@@ -88,7 +87,7 @@ function Search() {
         borderRadius={16}
         borderColor="grey.500"
         padding="16px"
-        margin="2% 10%" >
+        margin="2% 12%" >
         <Typography variant="h2" className={classes.title}>
           Search Google Books
       </Typography>
@@ -102,7 +101,7 @@ function Search() {
         borderRadius={16}
         borderColor="grey.500"
         padding="16px"
-        margin="2% 10%">
+        margin="1% 12%">
         <Typography variant="h3">Results</Typography>
         <div>
           {bookRes ? (

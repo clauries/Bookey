@@ -1,9 +1,13 @@
 ![Issues](https://img.shields.io/github/issues/clauries/Bookey)  ![Forks](https://img.shields.io/github/forks/clauries/Bookey)  ![Stars](https://img.shields.io/github/stars/clauries/Bookey)  ![License](https://img.shields.io/github/license/clauries/Bookey)  [![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fclauries%2FBookey)
 
 # Bookey
-This app is your key to searching through Google books.
+This app is your key to searching through and saving Google books.
 
-<img src="#" alt="App Image"/>
+<img src="./readme-images/upon-landing.png" alt="Search page upon landing"/>
+
+<img src="./readme-images/searched-books.png" alt="Search page after searching"/>
+
+<img src="./readme-images/saved-books.png" alt="Saved books page"/>
 
 #### [Deployed App](#)
 
@@ -30,10 +34,17 @@ As a reader, I want to search Google Books for quality book information so that 
 * MongoDB
 
 ## Future Development
+* Better image formmatting - currently the images appear zoomed in. Would like to work with Material-ui styling to create clearer images of the book covers. 
+* Authentication system - Would like to develop a login/profile system. Currently this app supports one user/list of books. Would be great if multiple users can have their own lists.
+* Various lists of books - user can categorize their book saves. 
+* Read book button - user can move a book to their "read books" list and add a review/notes for themselves or others to read. 
+* Connect to a library system - would be awesome to also search a library for books. Would need to change db links from around the name & image to buttons. So you would have a "buy book" and a "borrow book" button.
 
 
 ## Credits
-* App heavily influenced by activities through my current bootcamp - particularly Week 21, Activity 5.
+* App heavily influenced by activities through my current bootcamp [(Univeristy of Oregon's Coding BootCamp)](https://bootcamp.uoregon.edu/) - particularly Week 21, Activity 5. 
+* Material-UI - utilized many of their components. 
+
 
 ## License
 
