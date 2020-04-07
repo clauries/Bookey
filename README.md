@@ -12,9 +12,16 @@ As a reader, I want to search Google Books for quality book information so that 
 
 ## Local Installation and Usage
 1. Install the required modules by typing "npm install" or "npm i" using your code editor terminal; must be at the same level as the package.json.
+    * Should you want to seed the app with a few books, at the root of the app, use command "npm run seed".
 2. Run the app by typing "npm start", "node server.js", or "node server."
 3. The console log will display "Server listening on: http://localhost:3000 ."
-4. You can hold control and click on the address to go directly to the app.
+4. React should automatically open a webpage on your default browser. Should this not happen, you can hold control and click on the address to go directly to the app. App will open to the search page.
+5. Using the app: 
+    * Start searching for books by typing in the input. Books will appear in the results section.
+    * If you want to save a book, simply click on that book's save button. 
+    * If you want to view your saved books, navigate to the page by clicking the saved button in the top right corner.
+    * If you want to buy the book or simply view more info about the book, click on the book's title to navigate to the book's Google Play e-book page.
+    * To remove a book from your saved list, simply click on that book's delete button. 
 
 ## Tech Utilized
 * React

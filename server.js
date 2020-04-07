@@ -1,5 +1,4 @@
 const express = require("express");
-
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
@@ -16,7 +15,11 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
+mongoose.connect("mongodb://admin:95w9x9$hvC4!Ug!@ds245082.mlab.com:45082/heroku_qp8lgn79", {
+  useMongoClient: true,
+  useNewUrlParser: true,
+  useFindAndModify: false
+});
 
 // Start the API server
 app.listen(PORT, function() {
