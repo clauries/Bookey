@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://admin:95w9x9$hvC4!Ug!@ds245082.mlab.com:45082/heroku_qp8lgn79", {
+mongoose.connect("mongodb://admin:Silly#B0y@ds245082.mlab.com:45082/heroku_qp8lgn79", {
   useMongoClient: true,
   useNewUrlParser: true,
   useFindAndModify: false
