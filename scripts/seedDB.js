@@ -10,7 +10,7 @@ mongoose.connect(
 
 const bookSeed = [
   {
-    "_id": ObjectId("5e8b784685aeb726d05c1557"),
+    
     "authors": [
       "Philip Zaleski",
       "Carol Zaleski"
@@ -24,7 +24,7 @@ const bookSeed = [
     "__v": 0
   },
   {
-    "_id": ObjectId("5e8b784f85aeb726d05c1558"),
+
     "authors": [
       "J.R.R. Tolkien"
     ],
@@ -37,7 +37,7 @@ const bookSeed = [
     "__v": 0
   },
   {
-    "_id": ObjectId("5e8b785385aeb726d05c1559"),
+
     "authors": [
       "J.R.R. Tolkien"
     ],
@@ -49,7 +49,7 @@ const bookSeed = [
     "__v": 0
   },
   {
-    "_id": ObjectId("5e8b786085aeb726d05c155a"),
+
     "authors": [
       "J. R. R. Tolkien"
     ],
